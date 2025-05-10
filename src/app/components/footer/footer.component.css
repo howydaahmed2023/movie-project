@@ -1,0 +1,30 @@
+.logo {
+  font-size: 1.1rem;
+  gap: 0.5rem;
+}
+.logo i {
+  font-size: 24px;
+  color: var(--main-color);
+}
+.social-icons a i {
+  width: 55px;
+  height: 55px;
+  column-gap: 0.5rem;
+  border-radius: 50%;
+  line-height: 55px;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border: 4px solid rgb(2, 3, 7, 0.4);
+  transition: 0.2s all linear;
+}
+social-icons a:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+.copy {
+  font-size: 1.1rem;
+}
+.copy span {
+  color: var(--main-color);
+  cursor: pointer;
+}

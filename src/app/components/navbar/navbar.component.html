@@ -1,0 +1,52 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-light"
+  id="nav"
+  [class.scrolled]="isScrolled"
+>
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-semibold" href="#"
+      ><i class="fa-solid fa-film text-danger"></i> Movies</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            (click)="scrollTo('home')"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('movies')">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('comingsoon')">Coming Soon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollTo('newsletter')">Newsletter</a>
+        </li>
+      </ul>
+      <div>
+        <button
+          class="btn bg-danger text-light fw-normal border-radius"
+          type="submit"
+          (click)="scrollTo('home')"
+        >
+          sign in
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

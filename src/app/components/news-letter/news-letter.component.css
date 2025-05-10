@@ -1,0 +1,19 @@
+h2 {
+  font-size: 1.8rem;
+}
+input::placeholder {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.btn {
+  cursor: pointer;
+
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: #fa1216;
+}

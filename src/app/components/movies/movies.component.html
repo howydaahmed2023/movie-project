@@ -1,0 +1,31 @@
+<div class="container mt-5 movies" id="movies">
+  <div class="row">
+    <div class="col-12 mb-5">
+      <h2 class="text-light text-uppercase border-bottom border-danger">
+        opening this week
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-around">
+    @for( movie of movies;track $index){
+    <div class="col-md-2 mb-4 card bg-transparent" style="width: 200px">
+      <img
+        [src]="movie.thumbnail"
+        class="card-img-top img-fluid w-100 h-100"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title fw-medium" style="font-size: 0.9rem; color: red">
+          {{ movie.movieTitle }}
+        </h5>
+        <p class="card-text text-light">
+          {{ movie.movieDuration }}min | {{ movie.type }}
+        </p>
+      </div>
+    </div>
+
+    }
+  </div>
+</div>

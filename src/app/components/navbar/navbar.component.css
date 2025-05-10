@@ -1,0 +1,44 @@
+nav {
+  transition: 0.5s;
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+}
+.navbar {
+  padding: 20px 100px;
+}
+.navbar .navbar-brand {
+  font-size: 1.1rem;
+
+  gap: 0.5rem;
+  color: #fff;
+}
+.navbar .navbar-brand i {
+  font-size: 24px;
+}
+.navbar ul li a {
+  color: red;
+  font-weight: 500;
+  margin: 0 2.5rem;
+  font-size: 1rem;
+}
+nav.scrolled {
+  background-color: #fff;
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+nav.scrolled .navbar-brand {
+  color: black;
+}
+nav.scrolled .navbar a {
+  color: black;
+}
+
+.active {
+  border-bottom: 3px solid red;
+}
+.navbar ul li a:hover {
+  border-bottom: 3px solid red;
+
+  transition: 0.4s all ease;
+}
