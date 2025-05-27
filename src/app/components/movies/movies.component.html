@@ -1,4 +1,4 @@
-<div class="container mt-5 movies" id="movies">
+<div class="container  movies" id="movies">
   <div class="row">
     <div class="col-12 mb-5">
       <h2 class="text-light text-uppercase border-bottom border-danger">
@@ -10,13 +10,13 @@
 <div class="container">
   <div class="row justify-content-around">
     @for( movie of movies;track $index){
-    <div class="col-md-2 mb-4 card bg-transparent" style="width: 200px">
+    <div class="col-md-2  card bg-transparent" style="width: 200px">
       <img
         [src]="movie.thumbnail"
         class="card-img-top img-fluid w-100 h-100"
-        alt="..."
+        alt={{movie.movieTitle}}
       />
-      <div class="card-body">
+      <div class="card-body px-0">
         <h5 class="card-title fw-medium" style="font-size: 0.9rem; color: red">
           {{ movie.movieTitle }}
         </h5>

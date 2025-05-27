@@ -10,13 +10,13 @@
 <div class="container">
   <div class="row justify-content-around">
     @for( item of comingSoon;track $index){
-    <div class="col-md-2 mb-4 card bg-transparent" style="width: 200px">
+    <div class="col-md-2 card bg-transparent" style="width: 200px">
       <img
         [src]="item.thumbnail"
         class="card-img-top img-fluid w-100 h-100"
-        alt="..."
+        alt={{item.movieTitle}}
       />
-      <div class="card-body">
+      <div class="card-body px-0">
         <h5 class="card-title fw-medium" style="font-size: 0.9rem; color: red">
           {{ item.movieTitle }}
         </h5>
